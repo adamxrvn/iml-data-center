@@ -68,12 +68,6 @@ This dataset includes sensor measurements collected from an air free-cooled data
 
 1. Clone this repo 
 2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
-
-    *If using offline data mention that and how they may obtain the data from the froup)*
-    
 3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
 4. etc...
-
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
-
 5. Follow setup [instructions](Link to file)
