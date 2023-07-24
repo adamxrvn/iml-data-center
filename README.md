@@ -1,3 +1,6 @@
+<div align="center"> <img src="images/header.png"> </div>
+
+
 # Industrial Machine Learning: Data Center Air Cooling
 This project is a part of the Industrial Machine Learning course at Harbour.Space.  
 
@@ -10,10 +13,10 @@ We will construct a predictive model that considers various factors such as serv
 Data Source Link: [Data Source](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi%3A10.21979%2FN9%2FR1KU6R&version=&q=&fileTypeGroupFacet=%22Tabular+Data%22&fileAccess=&fileSortField=size)
 
 
-*Model Validation*:
+**Model Validation**:
 To validate the predictive model, we will compare its energy consumption forecasts with actual energy usage data from the data center. By evaluating the model's accuracy and effectiveness in optimizing energy consumption, we can determine its practical applicability.
 
-*Modeling Technique*:
+**Modeling Technique**:
 Given the temporal nature of energy consumption patterns, we will utilize Time Series analysis to develop the predictive model. Time Series models are well-suited for forecasting future values based on past data, making them appropriate for predicting energy consumption in a data center, especially during peak loads when cooling requirements are higher.
 
 
@@ -50,7 +53,7 @@ This dataset includes sensor measurements collected from an air free-cooled data
     │       └── 25
     │       └── ...
     │       └── 37
-    ├── ...                     # 
+    ├── images                  # Directory for pictures and graphs
     ├── ...                     # 
     ├── ...                     # 
     ├── ...                     # 
