@@ -10,7 +10,8 @@ The main goal of this project is to optimize energy consumption and cooling effi
 
 We will construct a predictive model that considers various factors such as server utilization, workload distribution, cooling efficiency, and energy management systems. By analyzing these parameters, the model will generate energy consumption forecasts for the data center.
 
-Data Source Link: [Data Source](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi%3A10.21979%2FN9%2FR1KU6R&version=&q=&fileTypeGroupFacet=%22Tabular+Data%22&fileAccess=&fileSortField=size)
+Data Source Link: [Data Source](https://ieee-dataport.org/open-access/data-server-energy-consumption-dataset)
+
 
 
 **Model Validation**:
