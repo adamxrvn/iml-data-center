@@ -24,7 +24,7 @@ Given the temporal nature of energy consumption patterns, we will utilize Time S
 ## Project Tasks
  
 
-✅ Take the dataset you selected for the final project.
+✅ Take the dataset you selected for the final project.  
 ✅ Run experiments to find optimal hyperparameters and feature engineering for your model. While running experiments, use the cross-validation technique for quality estimation and Mlflow tracking.  
 - Select the best model, load it back to Jupyter/script, and estimate the quality on a hold-out dataset.
 - Write a conclusion about the experiment results.  
