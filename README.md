@@ -74,16 +74,20 @@ Each data point in the dataset is indexed by a timestamp indicating when the sen
 ## Directory layout
 
     .
-    ├── data                    # Main data directory
-    ├── ml_flow.db              # MLflow database
-    ├── notebooks               # Jupyter notebooks
-    │   └── mlruns              # MLflow directory for storing artifacts
-    ├── images                  # Directory for pictures and graphs
-    ├── reports                 # Html reports. Can be viewed via Github Pages
+    ├── data                             # Main data directory
+    ├── ml_flow.db                       # MLflow database
+    ├── notebooks                        # Jupyter notebooks
+    │   ├── mlruns                       # MLflow directory for storing artifacts
+    │   ├── IML_New_Preparation.ipynb    # EDA notebook
+    │   ├── IML_mlflow.ipynb             # Training MLflow notebook (if needed can be converted to just .py)
+    │   ├── IML_Test.ipynb               # MLflow notebook that loads the best model from experiments and evalutes it on the test set
+    │   └── IML_Preparation.ipynb        # Old EDA notebook
+    ├── images                           # Directory for pictures and graphs
+    ├── reports                          # HTML reports. Can be viewed via Github Pages
     ├── ...
-    ├── .github/workflows       # Github workflow directory
-    ├── .gitignore              # 
-    ├── .git                    #
+    ├── .github/workflows                # Github workflow directory
+    ├── .gitignore                       # 
+    ├── .git                             #
     └── README.md
 
 
@@ -107,10 +111,8 @@ Each data point in the dataset is indexed by a timestamp indicating when the sen
 
 ## Getting Started
 
- TO BE EDITED
-
 1. Clone this repo 
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
-5. Follow setup [instructions](Link to file)
+2. 
+3. 
+4. 
+5. 
