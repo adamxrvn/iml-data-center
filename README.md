@@ -111,11 +111,12 @@ As a solution, we turned to another dataset mentioned in the preproject study, w
 
 Upon testing the models using a dedicated test set, all three models exhibited similar results, with a mean absolute error (MAE) of approximately 0.532. Furthermore, on an external test dataset, we observed an MAE of 0.52. This slight discrepancy can be attributed to the scaling of values.
 
+<p float="left">
 <img src="images/mlflow1.png" alt="Mlflow Schreenshot 1" style="width:25%; display:inline-block;">
 <img src="images/mlflow2.png" alt="Mlflow Schreenshot 2" style="width:25%; display:inline-block;">
 <img src="images/mlflow3.png" alt="Mlflow Schreenshot 3" style="width:25%; display:inline-block;">
 <img src="images/mlflow4.png" alt="Mlflow Schreenshot 4" style="width:25%; display:inline-block;">
-
+</p>
 
 Throughout the project, we utilized MLflow tracking to keep records of experiments and models, providing better insights into the performance of various configurations. Additionally, we incorporated yHat profiling with GitHub Actions to make profiling results accessible through [Github Pages](https://adamxrvn.github.io/iml-data-center/reports/report.html).
 
