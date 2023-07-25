@@ -107,12 +107,30 @@ Each data point in the dataset is indexed by a timestamp indicating when the sen
 [Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report_resampling.html) (After resampling)  
 
 
+## Project Results
 
+In this project, our initial approach was to work with a rich dataset containing 327 files. However, during the analysis phase, we encountered numerous gaps and inconsistencies within the data. The dataset was structured horizontally and vertically based on experiments and sensor outputs, which made merging the data problematic and resulted in the presence of NaNs. Additionally, the lack of synchronization in data collection further complicated matters, as the sensors saved results at slightly different times, and the ranges within which the results were taken varied.
+
+As a solution, we turned to another dataset mentioned in the preproject study, which proved to be relatively more consistent. We proceeded to build a regression model for energy consumption, employing linear regression, ridge regression, and lasso regression. During feature selection, we identified and removed several highly-correlated features, and all the values were appropriately scaled.
+
+Upon testing the models using a dedicated test set, all three models exhibited similar results, with a mean absolute error (MAE) of approximately 0.532. Furthermore, on an external test dataset, we observed an MAE of 0.52. This slight discrepancy can be attributed to the scaling of values.
+
+<img src="images/mlflow1.png" alt="Mlflow Schreenshot 1" style="width:25%; display:inline-block;">
+<img src="images/mlflow2.png" alt="Mlflow Schreenshot 2" style="width:25%; display:inline-block;">
+<img src="images/mlflow3.png" alt="Mlflow Schreenshot 3" style="width:25%; display:inline-block;">
+<img src="images/mlflow4.png" alt="Mlflow Schreenshot 4" style="width:25%; display:inline-block;">
+
+
+Throughout the project, we utilized MLflow tracking to keep records of experiments and models, providing better insights into the performance of various configurations. Additionally, we incorporated yHat profiling with GitHub Actions to make profiling results accessible through [Github Pages](https://adamxrvn.github.io/iml-data-center/reports/report.html).
+
+Moving forward, we plan to explore further fine-tuning of the models. If deemed necessary, we will delve into Time Series analysis modeling, acknowledging that this approach may require a significant investment of time and resources.
 
 ## Getting Started
+To reproduce the results:
 
 1. Clone this repo 
-2. 
-3. 
-4. 
-5. 
+2. Go to the repository's folder
+3. Run the MLflow server: `mlflow ui --backend-store-uri sqlite:///ml_flow.db --default-artifact-root ./mlruns`
+4. Run `IML_mlflow` to transform the data and start training
+5. Open MLflow's dashoard to view the results 
+6. Run `IML_Test` to assess the model on the test dataset 
