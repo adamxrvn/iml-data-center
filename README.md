@@ -1,7 +1,7 @@
 <div align="center"> <img src="images/header.png"> </div>
 
 
-# Industrial Machine Learning: Data Center Air Cooling
+# Industrial Machine Learning: Data Center Energy Consumption&Air Cooling
 This project is a part of the Industrial Machine Learning course at Harbour.Space.  
 
 
