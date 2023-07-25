@@ -26,37 +26,48 @@ Given the temporal nature of energy consumption patterns, we will utilize Time S
 
 ✅ Take the dataset you selected for the final project.  
 ✅ Run experiments to find optimal hyperparameters and feature engineering for your model. While running experiments, use the cross-validation technique for quality estimation and Mlflow tracking.  
-- Select the best model, load it back to Jupyter/script, and estimate the quality on a hold-out dataset.
+✅ Select the best model, load it back to Jupyter/script, and estimate the quality on a hold-out dataset.
 - Write a conclusion about the experiment results.  
   
 As a result, I expect to receive a link to a GitHub/Gitlab repository, which consists of the following:  
 - a well-written read.me, which explains what is stored in this repo and how to reproduce experiments  
-- script or scripts with experiments and experiment tracking  
-- any supporting materials like visualization results, scripts, instructions, or links that help understand your case and experiment results better.  
+✅ script or scripts with experiments and experiment tracking  
+✅ any supporting materials like visualization results, scripts, instructions, or links that help understand your case and experiment results better.  
 
 
 ## Dataset Description
-This dataset includes sensor measurements collected from an air free-cooled data center testbed. The dataset can be divided into two categories: energy and environmental data which are measured by instrumented hardware and software sensors during tests on the testbed. The energy data include power measurements of IT racks, cooling coils, heater, fans, and other supporting facilities. The environmental data include the conditions of outside weather, test rooms and IT racks. The condition includes temperature and RH measured at monitoring points at three heights on the front and back sides of IT racks, air volume flow rate and differential pressure across the IT racks, and concentrations of corrosive gases and particulate contaminations. The controlled tests folder includes 13 subfolders, each of which includes the sensor measurements under a specific supply temperature setpoint from 25°C to 37°C. Each data point is indexed by a timestamp corresponding to when the sensor measurement is sampled. Contents of sensor measurement files in each sub-folders are follows:
+This dataset comprises sensor readings obtained from an HP Z440 workstation during a 245-day (35-week) period, with data sampled at a rate of one value per second. The dataset encompasses diverse variables that pertain to the workstation's functioning, power usage, and temperature.
 
-| File                                       | Description                                          |
-|--------------------------------------------|------------------------------------------------------|
-| Energy_PUE.csv                             | Instantaneous PUE                                    |
-| Energy_Fan.csv                             | Powers of supply and exhaust fans                    |
-| Energy_Heater.csv                          | Power of heater                                      |
-| Energy_Rack.csv                            | Powers of four IT racks                              |
-| Energy_AirCon.csv                          | Powers of cooling coils and supporting facilities    |
-| Airflow_Control.csv                        | Supply air flow rate setpoint and measurement        |
-| Chemical.csv                               | Concentrations (ppb) of NOz, H2S and SO2             |
-| PM2.5.csv                                  | Concentrations (ug/m^3) of PM2.5                     |
-| DP Rack 1.csv and DP _Rack 2.csv           | Differential pressure across IT racks                |
-| Outside_Temp_RH.csv                        | Outside air temperature, RH and dewpoint             |
-| RH_Cold_Rack_1.cs, RH_Cold_Rack_2.csv      | Supply air RH in front of four IT racks              |
-| RH_Hot_Rack_1.cs, RH_Hot_Rack_2.csv        | Hot air RH in back of four IT racks                  |
-| Temp_Cold_Rack_1.csv, Temp_Cold_Rack_2.csv | Supply air temperature in front of four IT racks     |
-| Temp_Hot_Rack_1.csv, Temp_Hot_Rack_2.csv   | Hot air temperature in back of four IT racks         |
-| Temp_Control.csv                           | Supply air temperature setpoint and measurement      |
-| Temp_Room.csv                              | Temperature at mixing, cold, hold and buffer spaces  |
-| RH_Room.csv                                | RH at mixing, cold, hold and buffer spaces           |
+The columns in the dataset correspond to the following variables:
+
+1. Voltage (V)
+2. Current (A)
+3. Power (W) - measured in Watts (W)
+4. Frequency (Hz) - measured in Hertz (Hz)
+5. Active Energy - measured in kilowatts per hour (KWh)
+6. Power Factor - a dimensionless quantity
+7. ESP32 Temperature - measured in Centigrade Degrees (°C)
+8. CPU Consumption - measured as a percentage (%)
+9. CPU Power Consumption - measured as a percentage (%)
+10. CPU Temperature - measured in Centigrade Degrees (°C)
+11. GPU Consumption - measured as a percentage (%)
+12. GPU Power Consumption - measured as a percentage (%)
+13. GPU Temperature - measured in Centigrade Degrees (°C)
+14. RAM Memory Consumption - measured as a percentage (%)
+15. RAM Memory Power Consumption - measured as a percentage (%)
+
+The dataset was collected from an air free-cooled data center testbed, and it includes measurements from instrumented hardware and software sensors during tests on the testbed. 
+
+Each data point in the dataset is indexed by a timestamp indicating when the sensor measurement was taken.
+
+**Example:**
+
+| Timestamp                | Voltage | Current | Power | Frequency | Active Energy | Power Factor | ESP32 Temp (°C) | CPU (%) | CPU Power (%) | CPU Temp (°C) | GPU (%) | GPU Power (%) | GPU Temp (°C) | RAM (%) | RAM Power (%) |
+|--------------------------|---------|---------|-------|-----------|---------------|--------------|-----------------|---------|---------------|---------------|---------|---------------|---------------|---------|---------------|
+| 2023-01-01 00:00:00 UTC  | 220     | 1.5     | 330   | 50        | 12.5          | 0.95         | 25              | 60      | 50            | 40            | 70      | 60            | 50            | 80      | 70            |
+| 2023-01-01 00:00:01 UTC  | 221     | 1.6     | 355   | 50        | 12.8          | 0.96         | 26              | 58      | 49            | 39            | 71      | 62            | 52            | 81      | 71            |
+| ...                      | ...     | ...     | ...   | ...       | ...           | ...          | ...             | ...     | ...           | ...           | ...     | ...           | ...           | ...     | ...           |
+
 
 
 
@@ -68,7 +79,7 @@ This dataset includes sensor measurements collected from an air free-cooled data
     ├── notebooks               # Jupyter notebooks
     ├── reports                 # Html reports. Can be viewed via Github Pages
     ├── ...
-    ├── .github/workflows
+    ├── .github/workflows       # Github workflow directory
     ├── .gitignore                     # 
     └── README.md
 
