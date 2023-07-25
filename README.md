@@ -21,6 +21,20 @@ To validate the predictive model, we will compare its energy consumption forecas
 Given the temporal nature of energy consumption patterns, we will utilize Time Series analysis to develop the predictive model. Time Series models are well-suited for forecasting future values based on past data, making them appropriate for predicting energy consumption in a data center, especially during peak loads when cooling requirements are higher.
 
 
+## Project Tasks
+ 
+
+✅ Take the dataset you selected for the final project.
+✅ Run experiments to find optimal hyperparameters and feature engineering for your model.  While running experiments, use the cross-validation technique for quality estimation and Mlflow tracking.
+- Select the best model, load it back to Jupyter/script, and estimate the quality on a hold-out dataset.
+- Write a conclusion about the experiment results.
+
+As a result, I expect to receive a link to a GitHub/Gitlab repository, which consists of the following:
+- a well-written read.me, which explains what is stored in this repo and how to reproduce experiments
+- script or scripts with experiments and experiment tracking
+- any supporting materials like visualization results, scripts, instructions, or links that help understand your case and experiment results better.
+
+
 ## Dataset Description
 This dataset includes sensor measurements collected from an air free-cooled data center testbed. The dataset can be divided into two categories: energy and environmental data which are measured by instrumented hardware and software sensors during tests on the testbed. The energy data include power measurements of IT racks, cooling coils, heater, fans, and other supporting facilities. The environmental data include the conditions of outside weather, test rooms and IT racks. The condition includes temperature and RH measured at monitoring points at three heights on the front and back sides of IT racks, air volume flow rate and differential pressure across the IT racks, and concentrations of corrosive gases and particulate contaminations. The controlled tests folder includes 13 subfolders, each of which includes the sensor measurements under a specific supply temperature setpoint from 25°C to 37°C. Each data point is indexed by a timestamp corresponding to when the sensor measurement is sampled. Contents of sensor measurement files in each sub-folders are follows:
 
@@ -60,7 +74,11 @@ This dataset includes sensor measurements collected from an air free-cooled data
 
 
 ## View reports
-[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report.html)
+[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report.html) (Before preprocessing)
+[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report_eda.html) (After preprocessing)
+[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report_resampling.html) (After resampling)
+
+
 
 
 ## Getting Started
