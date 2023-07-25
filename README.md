@@ -75,13 +75,26 @@ Each data point in the dataset is indexed by a timestamp indicating when the sen
 
     .
     ├── data                    # Main data directory
-    ├── images                  # Directory for pictures and graphs
+    ├── ml_flow.db              # MLflow database
     ├── notebooks               # Jupyter notebooks
+    │   └── mlruns              # MLflow directory for storing artifacts
+    ├── images                  # Directory for pictures and graphs
     ├── reports                 # Html reports. Can be viewed via Github Pages
     ├── ...
     ├── .github/workflows       # Github workflow directory
-    ├── .gitignore                     # 
+    ├── .gitignore              # 
+    ├── .git                    #
     └── README.md
+
+
+## Directory layout of saved MLflow models
+
+    my_model/
+    ├── MLmodel
+    ├── model.pkl
+    ├── conda.yaml
+    ├── python_env.yaml
+    └── requirements.txt
 
 
 ## View reports
