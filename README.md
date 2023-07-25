@@ -74,9 +74,9 @@ This dataset includes sensor measurements collected from an air free-cooled data
 
 
 ## View reports
-[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report.html) (Before preprocessing)
-[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report_eda.html) (After preprocessing)
-[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report_resampling.html) (After resampling)
+[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report.html) (Before preprocessing)  
+[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report_eda.html) (After preprocessing)  
+[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report_resampling.html) (After resampling)  
 
 
 
