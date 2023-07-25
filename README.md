@@ -114,6 +114,7 @@ Upon testing the models using a dedicated test set, all three models exhibited s
 <p float="left">
 <img src="images/mlflow1.png" alt="Mlflow Schreenshot 1" style="width:25%; display:inline-block;">
 <img src="images/mlflow2.png" alt="Mlflow Schreenshot 2" style="width:25%; display:inline-block;">
+</br>
 <img src="images/mlflow3.png" alt="Mlflow Schreenshot 3" style="width:25%; display:inline-block;">
 <img src="images/mlflow4.png" alt="Mlflow Schreenshot 4" style="width:25%; display:inline-block;">
 </p>
