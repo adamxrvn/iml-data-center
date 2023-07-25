@@ -25,14 +25,14 @@ Given the temporal nature of energy consumption patterns, we will utilize Time S
  
 
 ✅ Take the dataset you selected for the final project.
-✅ Run experiments to find optimal hyperparameters and feature engineering for your model.  While running experiments, use the cross-validation technique for quality estimation and Mlflow tracking.
+✅ Run experiments to find optimal hyperparameters and feature engineering for your model. While running experiments, use the cross-validation technique for quality estimation and Mlflow tracking.  
 - Select the best model, load it back to Jupyter/script, and estimate the quality on a hold-out dataset.
-- Write a conclusion about the experiment results.
-
-As a result, I expect to receive a link to a GitHub/Gitlab repository, which consists of the following:
-- a well-written read.me, which explains what is stored in this repo and how to reproduce experiments
-- script or scripts with experiments and experiment tracking
-- any supporting materials like visualization results, scripts, instructions, or links that help understand your case and experiment results better.
+- Write a conclusion about the experiment results.  
+  
+As a result, I expect to receive a link to a GitHub/Gitlab repository, which consists of the following:  
+- a well-written read.me, which explains what is stored in this repo and how to reproduce experiments  
+- script or scripts with experiments and experiment tracking  
+- any supporting materials like visualization results, scripts, instructions, or links that help understand your case and experiment results better.  
 
 
 ## Dataset Description
