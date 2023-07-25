@@ -50,17 +50,16 @@ This dataset includes sensor measurements collected from an air free-cooled data
 
     .
     ├── data                    # Main data directory
-    │   └── controlled_tests     
-    │       └── 25
-    │       └── ...
-    │       └── 37
     ├── images                  # Directory for pictures and graphs
-    ├── ...                     # 
-    ├── ...                     # 
+    ├── notebooks               # Jupyter notebooks
+    ├── reports                 # Html reports can be viewed via Github Pages
     ├── ...                     # 
     ├── 
     └── README.md
 
+
+## View reports
+[Dataset profiling](https://adamxrvn.github.io/iml-data-center/reports/report.html)
 
 
 ## Getting Started
