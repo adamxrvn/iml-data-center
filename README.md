@@ -52,9 +52,10 @@ This dataset includes sensor measurements collected from an air free-cooled data
     ├── data                    # Main data directory
     ├── images                  # Directory for pictures and graphs
     ├── notebooks               # Jupyter notebooks
-    ├── reports                 # Html reports can be viewed via Github Pages
-    ├── ...                     # 
-    ├── 
+    ├── reports                 # Html reports. Can be viewed via Github Pages
+    ├── ...
+    ├── .github/workflows
+    ├── .gitignore                     # 
     └── README.md
 
 
